@@ -1,0 +1,35 @@
+{
+  "name": "@nocobase/plugin-online-count",
+  "version": "2.1.39",
+  "description": "Real-time online user count & management: online list, single-session (device-fingerprint) mutex login, force logout, user blacklist, system broadcast and session logs.",
+  "description.zh-CN": "在线人数统计与在线用户管理插件：实时在线人数、在线用户列表、单会话（设备指纹）互斥登录、强制下线、用户黑名单、系统广播与会话日志。",
+  "displayName": "Online Count",
+  "displayName.zh-CN": "在线人数统计",
+  "keywords": [
+    "online",
+    "online-count",
+    "presence",
+    "session",
+    "single-session",
+    "broadcast"
+  ],
+  "license": "Apache-2.0",
+  "main": "dist/server/index.js",
+  "dependencies": {},
+  "peerDependencies": {
+    "@nocobase/cache": "2.x",
+    "@nocobase/client": "2.x",
+    "@nocobase/client-v2": "2.x",
+    "@nocobase/database": "2.x",
+    "@nocobase/server": "2.x",
+    "@nocobase/test": "2.x"
+  },
+  "nocobase": {
+    "defaultEnabled": false,
+    "supportedVersions": [
+      "1.x",
+      "2.x"
+    ],
+    "editionLevel": 0
+  }
+}
