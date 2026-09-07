@@ -8,7 +8,7 @@
  */
 
 import { Plugin } from '@nocobase/client';
-import models from './models';
+// V2 handles model registration via FlowEngine; V1 only needs runtime init
 import { setupOnlineCountRuntime } from '../client-v2/runtime';
 
 export class PluginOnlineCountClient extends Plugin {
@@ -45,8 +45,6 @@ export class PluginOnlineCountClient extends Plugin {
   }
 
   async load() {
-    this.flowEngine.registerModels(models);
-
     // ===== 注册设置页面（dotted-key 协议，自动注册 /admin/settings/online-count/* 路由） =====
     this.pluginSettingsManager.add('online-count', {
       title: this.t('Online Count'),
